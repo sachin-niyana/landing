@@ -156,4 +156,40 @@
     color: var(--text-color-E);
 }
 
-@media (max-width:576px) {}
+@media (max-width:576px) {
+    :root {
+        --font-family-inter: "inter", sans-serif;
+        --font-family-karla: "karla", sans-serif;
+
+        --font-weight-A: 300;
+        --font-weight-B: 400;
+        --font-weight-C: 500;
+        --font-weight-D: 600;
+        --font-weight-E: 700;
+
+        --font-size-A: 10px;
+        --font-size-B: 13px;
+        --font-size-C: 15px;
+        --font-size-D: 16px;
+        --font-size-E: 18px;
+        --font-size-F: 20px;
+        --font-size-G: 21px;
+        --font-size-H: 22PX;
+        --font-size-I: 23PX;
+        --font-size-J: 24px;
+        --font-size-K: 34PX;
+        --font-size-L: 32PX;
+        --font-size-M: 25PX;
+        --font-size-N: 25PX;
+        --font-size-O: 11px;
+        --font-size-P: 12px;
+        --font-size-Q: 33px;
+        --font-size-R: 19px;
+
+        --text-color-A: #111b24;
+        --text-color-B: #ffffff;
+        --text-color-C: #bccbd6;
+        --text-color-D: #00ccab;
+        --text-color-E: #454d54;
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/root.css">
     <link rel="icon" href="/assets/img/png/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -20,8 +21,8 @@
 
 <body class="bg-color">
     <!-- [[[[navber]]]] -->
-
-    <section class="sticky-top bg-color pb-4">
+    <a id="button"></a>
+    <section class="sticky-top bg-color pb-4 pt-2">
         <div class="d-flex justify-content-between align-items-center justify-content-center pt-4 px-3">
             <div class="d-flex justify-content-center align-items-center text-center">
                 <img src="/assets/img/png/aleph-zero.png" alt="aleph-zero">
@@ -47,512 +48,845 @@
                 </div>
             </div>
             <div class=" mt-20 d-n">
-                <button class="font-weight-C font-size-B button-1 font-family-inter">Explore the ecosystem</button>
+                <h3 class="font-weight-C font-size-B button-1 font-family-inter">Explore the ecosystem</h3>
             </div>
         </div>
     </section>
-    <!-- [[[[header]]]] -->
-    <section class="pt-4" id="explore">
-        <div class="bg-img-1">
-            <div class="container">
-                <div class="row mt-5 d-flex justify-content-center flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 d-flex js-center align-items-center">
-                        <div class="py-0">
-                            <h3 class="font-family-inter text-color-B font-weight-E font-size-M">Zero-knowledge,</h3>
-                            <h5 class="font-family-inter font-weight-A font-size-N text-color-B">scalable layer 1</h5>
-                            <img src="/assets/img/png/line.png" alt="line">
-                            <p class="text-color-B font-weight-A font-size-E max-w-360 mt-3">Aleph Zero is a layer 1
-                                privacy-enhancing
-                                blockchain that ensures scalability, low
-                                transaction fees, instant finality, and optimal
-                                security.</p>
-                            <div class="d-flex button-2 button-2-font justify-content-between mt-4">
-                                <img src="/assets/img/png/button-img.png" alt="button-img">
-                                <h4 class="mb-0 text-color-D">Start exploring</h4>
+    <div class="overflow-hidden">
+        <!-- [[[[header]]]] -->
+        <section class="pt-4 overflow-hidden" id="explore" data-aos="flip-up" data-aos-duration="1000">
+            <div class="bg-img-1">
+                <div class="container">
+                    <div class="row mt-5 d-flex justify-content-center flex-column-reverse flex-lg-row">
+                        <div class="col-lg-6 d-flex js-center align-items-center">
+                            <div class="py-0">
+                                <h3 class="font-family-inter text-color-B font-weight-E font-size-M">Zero-knowledge,
+                                </h3>
+                                <h5 class="font-family-inter font-weight-A font-size-N text-color-B">scalable layer 1
+                                </h5>
+                                <img src="/assets/img/png/line.png" alt="line">
+                                <p class="text-color-B font-family-karla font-weight-A font-size-E max-w-360 mt-3">Aleph
+                                    Zero is a layer 1
+                                    privacy-enhancing
+                                    blockchain that ensures scalability, low
+                                    transaction fees, instant finality, and optimal
+                                    security.</p>
+                                <div class="d-flex button-2 align-items-center mt-4">
+                                    <img src="/assets/img/png/button-img.png" alt="button-img">
+                                    <h4 class="mb-0 font-family-inter font-weight-C font-size-C text-color-D ms-3">Start
+                                        exploring</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-center text-lg-start">
+                                <img class="w-100" src="/assets/img/png/image-1.png" alt="image-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[slider]]]] -->
+        <section class="mt-5 d-flex justify-content-center overflow-hidden" data-aos="flip-down"
+            data-aos-duration="1000">
+            <div class="bg-img-5 w-100 ">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <h3 class="font-family-inter font-weight-A font-size-A text-color-B mb-5 pt-4">Featured in</h3>
+                    </div>
+                    <div class="slick-slider ">
+                        <div class="element element-1"><a href="#"><img src="/assets/img/png/coindesk.png"
+                                    alt="coindesk"></a>
+                        </div>
+                        <div class="element element-2 "><a href="#"><img src="/assets/img/png/ccelpoint.png"
+                                    alt="ccelpoint"></a>
+                        </div>
+                        <div class="element element-3 mt-2"><a href="#"><img src="/assets/img/svg/mas.svg"
+                                    alt="mas"></a>
+                        </div>
+                        <div class="element element-4"><a href="#"><img src="/assets/img/png/blockwork.png"
+                                    alt="blockwork"></a>
+                        </div>
+                        <div class="element element-5"><a href="#"><img src="/assets/img/png/sifted.png"
+                                    alt="sifted"></a>
+                        </div>
+                        <div class="element element-6"><a href="#"><img src="/assets/img/png/company.png"
+                                    alt="company"></a>
+                        </div>
+                        <div class="element element-7"><a href="#"><img src="/assets/img/png/nasdaq.png"
+                                    alt="nasdaq"></a>
+                        </div>
+
+                    </div>
+                    <div class="border-line mb-5"></div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[card]]]] -->
+        <section id="build" class="mb-5 overflow-x-hidden" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container mt-5 pb-5">
+                <div class="row mb-5">
+                    <div class="col-lg-6 mb-50">
+                        <div class="card-1">
+                            <img class="w-100" src="/assets/img/png/image-2.png" alt="image-2">
+                            <div class="d-flex align-items-center mt-3 mb-4 ps-5">
+                                <img src="/assets/img/png/line-2.png" alt="line-2">
+                                <h3 class="font-weight-E font-family-inter font-size-H text-color-B ms-4">Build</h3>
+                                <h4 class="font-weight-A font-family-inter font-size-J text-color-B ms-3">fast</h4>
+                            </div>
+                            <p class="font-weight-A font-family-karla font-size-D text-color-C max-w-409 ps-5">Benefit
+                                from a unique
+                                combination of
+                                our
+                                consensus
+                                protocol, AlephBFT, and ink!, the Rust-based WASM
+                                programming environment.</p>
+                            <div class="d-flex align-items-center justify-content-end mt-4 alert-dismissible pb-3">
+                                <a class="font-weight-C font-family-inter font-size-C text-color-D me-2" href="#">Deploy
+                                    apps</a>
+                                <a class="mb-1" href="#"><img src="/assets/img/png/arrow.png" alt="arrow"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="text-center text-lg-start">
-                            <img class="w-100" src="/assets/img/png/image-1.png" alt="image-1">
+                        <div class="card-1 mt-48">
+                            <img class="w-100" src="/assets/img/png/image-3.png" alt="image-2">
+                            <div class="d-flex align-items-center mt-3 mb-4 ps-5">
+                                <img src="/assets/img/png/line-2.png" alt="line-2">
+                                <h3 class="font-weight-E font-family-inter font-size-H text-color-B ms-4">belale</h3>
+                                <h4 class="font-weight-A font-family-inter font-size-J text-color-B ms-2">easy</h4>
+                            </div>
+                            <p class="font-weight-A font-size-D font-family-karla text-color-C max-w-552 ps-5 text">
+                                Benefit from a unique
+                                Stake your AZERO with a trusted network of validators—or
+                                help scale Aleph Zero and make it more secure for everyone
+                                involved by becoming one yourself.</p>
+                            <div class="d-flex align-items-center justify-content-end mt-4 alert-dismissible pb-3 text">
+                                <a class="font-weight-C font-size-C text-color-D me-2" href="#">Validate and
+                                    nominate</a>
+                                <a href="#"><img class="mb-1 font-family-inter" src="/assets/img/png/arrow.png"
+                                        alt="arrow"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- [[[[slider]]]] -->
-    <section class="mt-5 d-flex justify-content-center overflow-hidden">
-        <div class="bg-img-5 w-100 ">
+        </section>
+        <!-- [[[[table]]]] -->
+        <section class="mt-5" data-aos="zoom-out-down" data-aos-duration="1000">
             <div class="container">
-                <div class="d-flex justify-content-center">
-                    <h3 class="font-family-inter font-weight-A font-size-A text-color-B mb-5 pt-4">Featured in</h3>
-                </div>
-                <div class="slick-slider ">
-                    <div class="element element-1"><a href="#"><img src="/assets/img/png/coindesk.png"
-                                alt="coindesk"></a>
-                    </div>
-                    <div class="element element-2 "><a href="#"><img src="/assets/img/png/ccelpoint.png"
-                                alt="ccelpoint"></a>
-                    </div>
-                    <div class="element element-3 mt-2"><a href="#"><img src="/assets/img/svg/mas.svg" alt="mas"></a>
-                    </div>
-                    <div class="element element-4"><a href="#"><img src="/assets/img/png/blockwork.png"
-                                alt="blockwork"></a>
-                    </div>
-                    <div class="element element-5"><a href="#"><img src="/assets/img/png/sifted.png" alt="sifted"></a>
-                    </div>
-                    <div class="element element-6"><a href="#"><img src="/assets/img/png/company.png" alt="company"></a>
-                    </div>
-                    <div class="element element-7"><a href="#"><img src="/assets/img/png/nasdaq.png" alt="nasdaq"></a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <div class="d-flex "> -->
-    <div class="border"></div>
-    <!-- </div> -->
-    <!-- [[[[card]]]] -->
-    <section id="build">
-        <div class="container mt-5 ">
-            <div class="row mb-5">
-                <div class="col-lg-6 mb-50">
-                    <div class="card-1">
-                        <img class="w-100" src="/assets/img/png/image-2.png" alt="image-2">
-                        <div class="d-flex align-items-center mt-3 mb-4 ps-5">
-                            <img src="/assets/img/png/line-2.png" alt="line-2">
-                            <h3 class="font-weight-E font-size-H text-color-B ms-4">Build</h3>
-                            <h4 class="font-weight-A font-size-J text-color-B ms-3">fast</h4>
-                        </div>
-                        <p class="font-weight-A font-size-D text-color-C max-w-409 ps-5">Benefit from a unique
-                            combination of
-                            our
-                            consensus
-                            protocol, AlephBFT, and ink!, the Rust-based WASM
-                            programming environment.</p>
-                        <div class="d-flex align-items-center justify-content-end mt-4 alert-dismissible pb-3">
-                            <h4 class="font-weight-C font-size-C text-color-D me-2">Deploy apps</h4>
-                            <img src="/assets/img/png/arrow.png" alt="arrow">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-3 col-6 mt-4">
+                        <div class="text-center">
+                            <h4 class="font-weight-E font-family-inter font-size-G text-color-B">0.9 sec</h4>
+                            <img src="/assets/img/png/line.png" alt="line">
+                            <p class="font-weight-A font-size-D font-family-karla text-color-C">Time to finality</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="card-1">
-                        <img class="w-100" src="/assets/img/png/image-3.png" alt="image-2">
-                        <div class="d-flex align-items-center mt-3 mb-4 ps-5">
-                            <img src="/assets/img/png/line-2.png" alt="line-2">
-                            <h3 class="font-weight-E font-size-H text-color-B ms-4">belale</h3>
-                            <h4 class="font-weight-A font-size-J text-color-B ms-2">easy</h4>
-                        </div>
-                        <p class="font-weight-A font-size-D text-color-C max-w-552 ps-5">Benefit from a unique
-                            Stake your AZERO with a trusted network of validators—or
-                            help scale Aleph Zero and make it more secure for everyone
-                            involved by becoming one yourself.</p>
-                        <div class="d-flex align-items-center justify-content-end mt-4 alert-dismissible pb-3">
-                            <h4 class="font-weight-C font-size-C text-color-D me-3">Validate and nominate</h4>
-                            <img src="/assets/img/png/arrow.png" alt="arrow">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- [[[[table]]]] -->
-    <section>
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-md-3 col-6 mt-4">
-                    <div class="text-center">
-                        <h4 class="font-weight-E font-size-G text-color-B">0.9 sec</h4>
-                        <img src="/assets/img/png/line.png" alt="line">
-                        <p class="font-weight-A font-size-D text-color-C">Time to finality</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mt-4">
-                    <div class="text-center">
-                        <h4 class="font-weight-E font-size-G text-color-B">0.0003 AZERO</h4>
-                        <img src="/assets/img/png/line.png" alt="line">
-                        <p class="font-weight-A font-size-D text-color-C">Avg cost per transaction</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mt-4">
-                    <div class="text-center">
-                        <h4 class="font-weight-E font-size-G text-color-B">57449</h4>
-                        <img src="/assets/img/png/line.png" alt="line">
-                        <p class="font-weight-A font-size-D text-color-C">Accounts</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mt-4">
-                    <div class="text-center">
-                        <h4 class="font-weight-E font-size-G text-color-B">123</h4>
-                        <img src="/assets/img/png/line.png" alt="line">
-                        <p class="font-weight-A font-size-D text-color-C">Mainnet validators</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- [[[[card-2]]]] -->
-    <section class="mb-5">
-        <div class="container position-relative">
-            <div class="bg-img-2 min-vh-60">
-                <div class="d-flex justify-content-center">
-                    <div class="card-2 position-absolute mx-4">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <img class="w-100" src="/assets/img/png/image-4.png" alt="image-4">
-                            </div>
-                            <div class="col-sm-6 mt-3 pe-4">
-                                <div class=" d-flex">
-                                    <div class="line-2"></div>
-                                    <p class="font-weight-A font-size-I text-color-B max-w-236">We're building a new
-                                        take on <span class="font-weight-E font-size-H text-color-B">blockchain
-                                            infrastructure</span></p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-end pe-1 mt-4">
-                                    <h4 class="font-weight-C font-size-C text-color-D">Why Aleph Zero</h4>
-                                    <img class="ms-3" src="/assets/img/png/arrow.png" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- [[[[slider-2]]]] -->
-    <!-- <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="d-flex">
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- [[[[curious]]]] -->
-    <section class="mt-5 mb-5">
-        <div class="container position-relative">
-            <div class="bg-img-3 min-vh-60 ">
-                <div class="card-3 position-absolute mx-4">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img class="w-100" src="/assets/img/png/image-5.png" alt="image-5">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex">
-                                <div class="line-1 "></div>
-                                <p class="font-weight-A font-size-I text-color-B pt-3 ">Curious about <span
-                                        class="font-weight-E font-size-H text-color-B max-w-236">upcoming network
-                                        upgrades?</span>
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-end pe-3 mt-4">
-                                <h4 class="font-weight-C font-size-C text-color-D">Go to the roadmap</h4>
-                                <img class="ms-3" src="/assets/img/png/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- [[[[aleph]]]] -->
-    <section class="mt-5 mb-5">
-        <div class="container position-relative">
-            <div class="bg-img-4 min-vh-60">
-                <div class="card-4 position-absolute mx-4">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img class="w-100" src="/assets/img/png/image-6.png " alt="image-5">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex">
-                                <div class="line-1"></div>
-                                <p class="font-weight-A font-size-I text-color-B pt-3 ">Curious about <span
-                                        class="font-weight-E font-size-H text-color-B max-w-236">upcoming network
-                                        upgrades?</span>
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-end pe-3 mt-5">
-                                <a href="#">
-                                    <h4 class="font-weight-C font-size-C text-color-D">Our carbon footprint</h4>
-                                </a>
-                                <img class="ms-3" src="/assets/img/png/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- [[[[Community]]]] -->
-    <section class="mt-5" id="community">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-lg-6 d-flex justify-content-center">
-                    <img class="w-100 image-7 mt-5" src="/assets/img/png/image-7.png" alt="image-7">
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center">
-                    <div>
-                        <h3 class="font-weight-E font-size-l text-color-B max-w-410">Community <span
-                                class="font-weight-A font-size-Q text-color-C">of over 100,000 people</span></h3>
-                        <img src="/assets/img/png/line.png" alt="line">
-                        <p class="font-weight-A font-size-E max-w-410 text-color-C mt-2">Join us and get involved in a
-                            number
-                            of
-                            ongoing
-                            educational activities run not only by the core team
-                            but also by the community directly.</p>
-                        <button class="button-3 font-weight-C font-size-C text-color-D mt-2">Get involved</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- [[[[card-3]]]] -->
-    <section>
-        <img class="w-100" src="/assets/img/png/img-3.png" alt="img-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="card-5 my-4">
-                        <img class="w-100" src="/assets/img/png/card-img-1.png" alt="card-img-1">
-                        <div class="d-flex">
-                            <img class="ps-4 pe-3" src="/assets/img/png/line-2.png" alt="line-2">
-                            <h3 class="font-weight-A font-size-F text-color-B mt-2 ms-2">AZERO <span
-                                    class="font-weight-E font-size-r text-color-B mt-2">wallet</span></h3>
-                        </div>
-                        <p class="font-weight-A font-size-C text-color-C max-w-236 ps-4 mt-3">Set up your Aleph
-                            Zero
-                            wallet
-                            to be
-                            able to hold, transfer, or stake your
-                            AZERO coins.</p>
-                        <div class="d-flex align-items-center button-4">
-                            <img class="" src="/assets/img/png/arrow.png" alt="arrow">
-                            <p class="font-weight-C font-size-D text-color-D max-w-45">Go to</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="card-5 my-4">
-                        <img class="w-100" src="/assets/img/png/card-img-2.png" alt="card-img-1">
-                        <div class="d-flex">
-                            <img class="ps-4 pe-3" src="/assets/img/png/line-2.png" alt="line-2">
-                            <h3 class="font-weight-A font-size-F text-color-B mt-2 ms-2">AZERO <span
-                                    class="font-weight-E font-size-r text-color-B mt-2">explorer</span></h3>
-                        </div>
-                        <p class="font-weight-A font-size-C text-color-C max-w-236 ps-4 mt-3">Familiarize
-                            yourself
-                            with the Aleph
-                            Zero explorer launched in
-                            collaboration with Subscan.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="card-5 my-4">
-                        <img class="w-100" src="/assets/img/png/card-img-3.png" alt="card-img-1">
-                        <div class="d-flex">
-                            <img class="ps-4 pe-3" src="/assets/img/png/line-2.png" alt="line-2">
-                            <h3 class="font-weight-A font-size-F text-color-B mt-2 ms-2">AZERO <span
-                                    class="font-weight-E font-size-r text-color-B mt-2">utility</span></h3>
-                        </div>
-                        <p class="font-weight-A font-size-C text-color-C max-w-236 ps-4 mt-3">Learn more about
-                            the
-                            utility and
-                            economics behind AZERO - Aleph
-                            Zero's native coin.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img class="w-100" src="/assets/img/png/img-4.png" alt="img-2">
-    </section>
-    <!-- [[[[footer-1]]]] -->
-    <section id="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center">
-                        <img src="/assets/img/png/line-2.png" alt="line">
-                        <h3 class="font-weight-A font-size-J text-color-B ms-3">Be <span
-                                class="font-weight-E font-size-I text-color-B">future-ready</span></h3>
-                    </div>
-                    <p class="font-weight-A font-size-C text-color-C max-w-339 mt-4">Get the latest from the Aleph Zero
-                        ecosystem and
-                        engineering updates, straight to your inbox.</p>
-                    <div class="d-flex justify-content-between your-email">
-                        <input type="email" placeholder="Your email"
-                            class="font-family-karla font-weight-A font-size-D inter-email">
-                        <a class="button-5 ff-inter fw-500 fc_black fs-13 d-flex align-items-center gap-3" href="#">
-                            <img src="/assets/img/svg/message.svg" alt="message">
-                            <p class="mb-0 ff-inter fw-500 fs-13 text-black">
-                                Subscribe
+                    <div class="col-md-3 col-6 mt-4">
+                        <div class="text-center">
+                            <h4 class="font-weight-E font-family-inter font-size-G text-color-B">0.0003 AZERO</h4>
+                            <img src="/assets/img/png/line.png" alt="line">
+                            <p class="font-weight-A font-family-karla font-size-D text-color-C">Avg cost per transaction
                             </p>
-                        </a>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-baseline gap-3 mt-4">
-                        <input type="checkbox" id="box_check" class="check_box">
-                        <label for="box_check"
-                            class="font-family-karla font-weight-A font-size-B text-color-B max-w-342">
-                            I consent to receive commercial information in the
-                            form of a newsletter sent to the e-mail address
-                            provided by the Aleph Zero Foundation with
-                            registered seat in Bergliweg 15, 6300 Zug. Providing
-                            consent is voluntary. Consent may be revoked at any
-                            time.
-                        </label>
+                    <div class="col-md-3 col-6 mt-4">
+                        <div class="text-center">
+                            <h4 class="font-weight-E font-size-G font-family-inter text-color-B">57449</h4>
+                            <img src="/assets/img/png/line.png" alt="line">
+                            <p class="font-weight-A font-size-D font-family-karla text-color-C">Accounts</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mt-4">
+                        <div class="text-center">
+                            <h4 class="font-weight-E font-size-G font-family-inter text-color-B">123</h4>
+                            <img src="/assets/img/png/line.png" alt="line">
+                            <p class="font-weight-A font-size-D font-family-karla text-color-C">Mainnet validators</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6">
+            </div>
+        </section>
+        <!-- [[[[card-2]]]] -->
+        <section class="mb-5">
+            <div class="container position-relative pb-5">
+                <div class="bg-img-2 min-vh-60">
+                    <div class="d-flex justify-content-center">
+                        <div class="card-2 mx-4">
                             <div class="row">
-                                <div class="col-6">
-                                    <ul>
-                                        <li class="mb-5"><a class="font-weight-E font-size-C text-color-B"
-                                                href="#">Explore</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C" href="#">Why
-                                                Aleph
-                                                Zero</a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Roadmap</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Utility &
-                                                Economics</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Utility &
-                                                Economics</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C" href="#">Use
-                                                Cases</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">FAQ<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Whitepapers<sup class="ps-2"><img
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
-                                        </li>
-                                        <li class="mb-4"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Carbon
-                                                Footprint</a>
-                                        </li>
-                                        <li class="mb-3 pt-3"><a class="font-size-O font-weight-A
-                                                                                             text-color-C"
-                                                href="#">Network</a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Wallet<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Staking</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Explorer<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Ecosystem</a>
-                                        </li>
-                                    </ul>
+                                <div class="col-sm-6 overflow-hidden" data-aos="zoom-out-right"
+                                    data-aos-duration="1000">
+                                    <img class="w-100 image-5" src="/assets/img/png/image-4.png" alt="image-4">
                                 </div>
-                                <div class="col-6">
-                                    <ul>
-                                        <li class="mb-5"><a class="font-weight-E font-size-C text-color-B"
-                                                href="#">Build</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Funding
-                                                Program></a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Testnet<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a></li>
-                                        <li class="mb-4"><a class="font-size-B font-weight-C text-color-C" href="#">Dev
-                                                space</a>
-                                        </li>
-                                        <li class="mb-3 pt-3"><a class="font-size-O font-weight-A
-                                                                                             text-color-C" href="#">Dev
-                                                Portal</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C" href="#">Code
-                                                repository<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Documentation<sup class="ps-2"><img
-                                                        class=" align-items-baseline" src="/assets/img/svg/arrow-2.svg"
-                                                        alt="arrow-2"></sup></a></li>
-                                    </ul>
+                                <div class="col-sm-6 mt-3 pe-4" data-aos="zoom-out-left" data-aos-duration="1000">
+                                    <div class=" d-flex">
+                                        <div class="line-2"></div>
+                                        <h3 class="font-weight-A font-size-I font-family-inter text-color-B max-w-236">
+                                            We're building a
+                                            new
+                                            take on <span class="font-weight-E font-size-H text-color-B">blockchain
+                                                infrastructure</span></h3>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end pe-1 mt-4">
+                                        <a class="font-weight-C font-size-C font-family-inter text-color-D" href="#">Why
+                                            Aleph Zero</a>
+                                        <a href="#"><img class="ms-3 mb-1" src="/assets/img/png/arrow.png"
+                                                alt="arrow"></a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-6">
-                                    <ul>
-                                        <li class="mb-5"><a class="font-weight-E font-size-C text-color-B"
-                                                href="#">Community</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Social
-                                                Platforms</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C" href="#"></a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Upcoming
-                                                Events</a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Ambassador
-                                                Program</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Press /
-                                                Media
-                                                Kit</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Careers<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a></li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C" href="#">Core
-                                                Team</a>
-                                        </li>
-                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[slider-2]]]] -->
+        <section class="mt-5">
+            <div class="container pt-5">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                        <img class="w-100" src="/assets/img/png/big-img.png" alt="big-img">
+                    </div>
+                    <div class="col-lg-6 ps-5" data-aos="fade-left" data-aos-duration="1000">
+                        <h4 class="font-weight-E font-size-L text-color-B font-family-inter ms-5 ">Applications under
+                        </h4>
+                        <h4 class="font-weight-A font-size-K text-color-B font-family-inter ms-5 ">development</h4>
+                        <img class=" ms-5" src="/assets/img/png/line.png" alt="line">
+                        <p class="font-weight-A font-size-E text-color-C font-family-karla max-w-410 ms-5 ">With the
+                            mainnet launch, Aleph
+                            Zero
+                            has
+                            seen a
+                            notable initial adoption within the developer
+                            community. Our flexible environment will be familiar
+                            for builders who are already accustomed with Rust and
+                            the Substrate stack.</p>
+                        <button
+                            class="button-6 font-weight-C font-size-B text-color-D font-family-inter mt-3 mb-5 ms-5">Explore
+                            the
+                            ecosystem</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[curious]]]] -->
+        <section class="mt-5 mb-5">
+            <div class="container position-relative">
+                <div class="bg-img-3 min-vh-60 ">
+                    <div class="card-3    mx-4">
+                        <div class="row">
+                            <div class="col-sm-6 overflow-hidden" data-aos="zoom-out-right" data-aos-duration="1000">
+                                <img class="w-100 image-5" src="/assets/img/png/image-5.png" alt="image-5">
+                            </div>
+                            <div class="col-sm-6" data-aos="zoom-out-left" data-aos-duration="1000">
+                                <div class="d-flex">
+                                    <div class="line-1 "></div>
+                                    <h3 class="font-weight-A font-size-I text-color-B font-family-inter pt-3 ">Curious
+                                        about <span
+                                            class="font-weight-E font-size-H text-color-B font-family-inter max-w-236">upcoming
+                                            network
+                                            upgrades?</span>
+                                    </h3>
                                 </div>
-                                <div class="col-6">
-                                    <ul>
-                                        <li class="mb-5"><a class="font-weight-E font-size-C text-color-B"
-                                                href="#">Content</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Blog</a>
-                                        </li>
-                                        <li class="mb-3"><a class="font-size-B font-weight-C text-color-C"
-                                                href="#">Videos<sup class="ps-2"><img class=" align-items-baseline"
-                                                        src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center justify-content-end pe-3 mt-4">
+                                    <a class="font-weight-C font-size-C font-family-inter text-color-D" href="#">Go to
+                                        the roadmap</a>
+                                    <a href="#"><img class="ms-3" src="/assets/img/png/arrow.png" alt="arrow"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- [[[[slider-2]]]] -->
+        <section class="overflow-hidden pt-5 mt-5">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="font-weight-A font-size-K font-family-inter text-color-B">Driving <span
+                                class="font-weight-E font-size-L font-family-inter text-color-B">Web3 adoption</span>
+                        </h3>
+                        <img src="/assets/img/png/line.png" alt="line">
+                        <p class="max-w-475 font-weight-A font-size-E font-family-karla text-color-C mt-3">Aleph Zero
+                            bridges the gap
+                            between
+                            scalability,
+                            security, developer friendliness, and cost of use. 
+                            Moreover, the network will boast a native privacy stack
+                            to further enable you to build solutions that strike the
+                            balance between transparency and privacy.</p>
+                        <button class="button-6 font-weight-C font-size-B font-family-inter text-color-D mt-3 mb-5">See
+                            what’s
+                            possible</button>
+                    </div>
+                    <div class="col-lg-6" data-aos="zoom-out-up" data-aos-duration="1000">
+                        <div class="slick-slider-2 cursor-p">
+                            <div class="element element-1 mt-2">
+                                <div class="bg-box">
+                                    <div class="d-flex align-items-center ps-2">
+                                        <div><img class="w-100" src="/assets/img/svg/file-1.svg" alt="file-1">
+                                        </div>
+                                        <h2 class="font-family-inter font-weight-C font-size-C text-color-B md-0 ps-3">
+                                            Supply
+                                            chain management
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element element-2 mt-2">
+                                <div class="bg-box">
+                                    <div class="d-flex align-items-center ps-2">
+                                        <div><img class="w-100" src="/assets/img/svg/file-2.svg" alt="file-2"></div>
+                                        <h2 class="font-family-inter font-weight-C font-size-C text-color-B md-0 ps-3">
+                                            Asset
+                                            digitization</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element element-3 mt-2">
+                                <div class="bg-box">
+                                    <div class="d-flex align-items-center ps-2">
+                                        <div><img class="w-100" src="/assets/img/svg/file-3.svg" alt="file-3">
+                                        </div>
+                                        <h2 class="font-family-inter font-weight-C font-size-C text-color-B md-0 ps-3">
+                                            Smart
+                                            contracts</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element element-4 mt-2">
+                                <div class="bg-box">
+                                    <div class="d-flex align-items-center ps-2">
+                                        <div><img class="w-100" src="/assets/img/svg/file-4.svg" alt="file-4">
+                                        </div>
+                                        <h2 class="font-family-inter font-weight-C font-size-C text-color-B md-0 ps-3">
+                                            Notary
+                                            signatory</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element element-5 mt-2">
+                                <div class="bg-box">
+                                    <div class="d-flex align-items-center ps-2">
+                                        <div><img class="w-100" src="/assets/img/svg/file-5.svg" alt="file-5">
+                                        </div>
+                                        <h2 class="font-family-inter font-weight-C font-size-C text-color-B md-0 ps-3">
+                                            Automatic
+                                            payments and
+                                            shared
+                                            revenue agreement</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[aleph]]]] -->
+        <section class="mt-5">
+            <div class="container position-relative pb-5">
+                <div class="bg-img-4 min-vh-60">
+                    <div class="card-4 mx-4">
+                        <div class="row">
+                            <div class="col-sm-6 overflow-hidden " data-aos="zoom-out-right" data-aos-duration="1000">
+                                <img class="w-100 image-5" src="/assets/img/png/image-6.png " alt="image-5">
+                            </div>
+                            <div class="col-sm-6" data-aos="zoom-out-left" data-aos-duration="1000">
+                                <div class="d-flex">
+                                    <div class="line-1"></div>
+                                    <p class="font-weight-A font-size-I text-color-B pt-3 font-family-inter max-w-236">
+                                        Aleph
+                                        Zero
+                                        is designed
+                                        to <span class="font-weight-E font-size-H text-color-B font-family-inter">care
+                                            for the
+                                            environment</span>
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end pe-3 mt-5">
+                                    <a href="#">
+                                        <h4 class="font-weight-C font-size-C font-family-inter text-color-D">Our carbon
+                                            footprint</h4>
+                                    </a>
+                                    <a href="#"><img class="ms-3 mb-2" src="/assets/img/png/arrow.png" alt="arrow"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[Community]]]] -->
+        <section id="community">
+            <div class="container pt-5 pb-5">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6 d-flex justify-content-center" data-aos="flip-right" data-aos-duration="1000">
+                        <img class="w-100 image-7 mt-5" src="/assets/img/png/image-7.png" alt="image-7">
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <h3 class="font-weight-E font-family-inter font-size-l text-color-B max-w-410">Community
+                                <span class="font-weight-A font-family-inter font-size-Q text-color-C">of over 100,000
+                                    people</span>
+                            </h3>
+                            <img src="/assets/img/png/line.png" alt="line">
+                            <p class="font-weight-A font-size-E font-family-karla max-w-410 text-color-C mt-2">Join us
+                                and get involved in
+                                a
+                                number
+                                of
+                                ongoing
+                                educational activities run not only by the core team
+                                but also by the community directly.</p>
+                            <button class="button-3 font-weight-C font-size-C font-family-inter text-color-D mt-2">Get
+                                involved</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[card-3]]]] -->
+        <section class="mb-3" data-aos="fade-up-right" data-aos-duration="1000">
+            <img class="w-100" src="/assets/img/png/img-3.png" alt="img-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center youtube">
+                        <div class="card-5 my-4 position-relative overflow-hidden">
+                            <img class="w-100" src="/assets/img/png/card-img-1.png" alt="card-img-1">
+                            <div class="d-flex">
+                                <img class="ps-4 pe-3" src="/assets/img/png/line-2.png" alt="line-2">
+                                <h3 class="font-weight-A font-size-F text-color-B mt-2 font-family-inter ms-2">AZERO
+                                    <span
+                                        class="font-weight-E font-size-r text-color-B font-family-inter mt-2">wallet</span>
+                                </h3>
+                            </div>
+                            <p class="font-weight-A font-size-C text-color-C font-family-karla max-w-236 ps-4 mt-3">Set
+                                up your Aleph
+                                Zero
+                                wallet
+                                to be
+                                able to hold, transfer, or stake your
+                                AZERO coins.</p>
+                            <div class="d-flex justify-content-end pb-3">
+                                <div class="button-4 d-flex align-items-center ">
+                                    <img class="" src="/assets/img/png/arrow.png" alt="arrow">
+                                    <p class="font-weight-C font-size-D text-color-D ms-3font-family-inter mb-0">Go to
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center youtube">
+                        <div class="card-5 my-4 position-relative overflow-hidden">
+                            <img class="w-100" src="/assets/img/png/card-img-2.png" alt="card-img-1">
+                            <div class="d-flex">
+                                <img class="ps-4 pe-3" src="/assets/img/png/line-2.png" alt="line-2">
+                                <h3 class="font-weight-A font-size-F text-color-B mt-2 font-family-inter ms-2">AZERO
+                                    <span
+                                        class="font-weight-E font-size-r text-color-B font-family-inter mt-2">explorer</span>
+                                </h3>
+                            </div>
+                            <p class="font-weight-A font-size-C text-color-C max-w-236 font-family-karla ps-4 mt-3">
+                                Familiarize
+                                yourself
+                                with the Aleph
+                                Zero explorer launched in
+                                collaboration with Subscan.</p>
+                            <div class="d-flex justify-content-end pb-3">
+                                <div class="button-4 d-flex align-items-center ">
+                                    <img class="" src="/assets/img/png/arrow.png" alt="arrow">
+                                    <p class="font-weight-C font-size-D text-color-D ms-3 font-family-inter mb-0">Go to
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center youtube">
+                        <div class="card-5 my-4 position-relative overflow-hidden">
+                            <img class="w-100" src="/assets/img/png/card-img-3.png" alt="card-img-1">
+                            <div class="d-flex">
+                                <img class="ps-4 pe-3" src="/assets/img/png/line-2.png" alt="line-2">
+                                <h3 class="font-weight-A font-size-F text-color-B mt-2 font-family-inter ms-2">AZERO
+                                    <span
+                                        class="font-weight-E font-size-r text-color-B font-family-inter mt-2">utility</span>
+                                </h3>
+                            </div>
+                            <p class="font-weight-A font-size-C text-color-C max-w-236 font-family-karla ps-4 mt-3">
+                                Learn more about
+                                the
+                                utility and
+                                economics behind AZERO - Aleph
+                                Zero's native coin.</p>
+                            <div class="d-flex justify-content-end pb-3">
+                                <div class="button-4 d-flex align-items-center ">
+                                    <img class="" src="/assets/img/png/arrow.png" alt="arrow">
+                                    <p class="font-weight-C font-size-D text-color-D ms-3 font-family-inter mb-0">Go to
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="w-100" src="/assets/img/png/img-4.png" alt="img-2">
+        </section>
+        <!-- [[[[footer-1]]]] -->
+        <section class="mt-5" id="content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 me-4">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/img/png/line-2.png" alt="line">
+                            <h3 class="font-weight-A font-size-J font-family-inter text-color-B ms-3">Be <span
+                                    class="font-weight-E font-size-I font-family-inter text-color-B">future-ready</span>
+                            </h3>
+                        </div>
+                        <p class="font-weight-A font-size-C font-family-karla text-color-C max-w-339 mt-4">Get the
+                            latest from the Aleph
+                            Zero
+                            ecosystem and
+                            engineering updates, straight to your inbox.</p>
+                        <div class="d-flex justify-content-between your-email">
+                            <input type="email" placeholder="Your email" name="email"
+                                class="font-family-karla font-weight-A font-size-D inter-email">
+                            <a class="button-5 ff-inter fw-500 fc_black fs-13 d-flex align-items-center gap-3" href="#">
+                                <img src="/assets/img/svg/message.svg" alt="message">
+                                <p class="mb-0 ff-inter fw-500 font-family-inter fs-13 text-black">
+                                    Subscribe
+                                </p>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-3 mt-4">
+                            <input type="checkbox" id="check_box" class="check_box bg-color">
+                            <label for="check_box"
+                                class="font-family-karla font-weight-A font-size-B text-color-B max-w-342">
+                                I consent to receive commercial information in the
+                                form of a newsletter sent to the e-mail address
+                                provided by the Aleph Zero Foundation with
+                                registered seat in Bergliweg 15, 6300 Zug. Providing
+                                consent is voluntary. Consent may be revoked at any
+                                time.
+                            </label>
+                        </div>
+                        <div class="d-flex mt-5">
+                            <a class="discord" href="#"><img src="/assets/img/svg/discord.svg" alt="discord"></a>
+                            <a class="ms-4 telygram" href="#"><img src="/assets/img/svg/telygram.svg"
+                                    alt="telygram"></a>
+                            <a class="ms-4 twitter" href="#"><img src="/assets/img/svg/twitter.svg" alt="twitter"></a>
+                            <a class="ms-4 in" href="#"><img src="/assets/img/svg/in.svg" alt="in"></a>
+                            <a class="ms-4 monkey" href="#"><img src="/assets/img/svg/monkey.svg" alt="monkey"></a>
+                            <a class="ms-4 youtube" href="#"><img src="/assets/img/svg/youtube.svg" alt="youtube"></a>
+                            <a class="ms-4 instagram" href="#"><img src="/assets/img/svg/instagram.svg"
+                                    alt="instagram"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ms-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-6 px-0">
+                                        <ul>
+                                            <li
+                                                class="mb-5 font-family-inter font-weight-E font-size-C text-color-B mt-lg-0 mt-5">
+                                                Explore
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Why
+                                                    Aleph
+                                                    Zero</a></li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Roadmap</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Utility &
+                                                    Economics</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Utility &
+                                                    Economics</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Use
+                                                    Cases</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">FAQ<sup class="ps-2"><img class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Whitepapers<sup class="ps-2"><img
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-4"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Carbon
+                                                    Footprint</a>
+                                            </li>
+                                            <li
+                                                class="mb-3 font-family-inter font-size-O font-weight-A text-color-C pt-3">
+                                                N E T W O R K</li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Wallet<sup class="ps-2"><img class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Staking</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Explorer<sup class="ps-2"><img
+                                                            class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Ecosystem</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <ul>
+                                            <li
+                                                class="mb-5 font-weight-E font-family-inter font-size-C text-color-B mt-lg-0 mt-5">
+                                                Build
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Funding
+                                                    Program</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Testnet<sup class="ps-2"><img class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-4"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Dev
+                                                    Portal</a>
+                                            </li>
+                                            <li
+                                                class="mb-3 font-size-O font-family-inter font-weight-A text-color-C pt-3">
+                                                D E V <span
+                                                    class="mb-3 font-size-O font-family-inter font-weight-A text-color-C pt-3 ms-2">S
+                                                    P A
+                                                    C
+                                                    E</span>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line position-relative font-family-inter font-size-B font-weight-C text-color-C"
+                                                    href="#">Code
+                                                    repository<sup class="ps-2"><img class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Documentation<sup class="ps-2"><img
+                                                            class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-6 px-0">
+                                        <ul>
+                                            <li
+                                                class="mb-5 font-family-inter font-weight-E font-size-C text-color-B mt-lg-0 mt-5">
+                                                Community
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Social
+                                                    Platforms</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#"></a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Upcoming
+                                                    Events</a></li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Ambassador
+                                                    Program</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Press /
+                                                    Media
+                                                    Kit</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Careers<sup class="ps-2"><img class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Core
+                                                    Team</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <ul>
+                                            <li
+                                                class="mb-5 font-family-inter font-weight-E font-size-C text-color-B mt-lg-0 mt-5">
+                                                Content
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Blog</a>
+                                            </li>
+                                            <li class="mb-3"><a
+                                                    class="nav-line font-family-inter position-relative font-size-B font-weight-C text-color-C"
+                                                    href="#">Videos<sup class="ps-2"><img class=" align-items-baseline"
+                                                            src="/assets/img/svg/arrow-2.svg" alt="arrow-2"></sup></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[[[footer-2]]]] -->
+        <section class="mt-5 overflow-x-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pt-3" data-aos="zoom-out-right" data-aos-duration="1000">
+                        <div class="card-6">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/svg/card-img-3.svg" alt="card-3">
+                                <div>
+                                    <h4
+                                        class="font-weight-A font-size-B text-color-B font-family-inter ms-5 font-family-inter">
+                                        Aleph
+                                        Zero Foundation</h4>
+                                    <p class="font-weight-A fs-14 text-color-B ms-5 max-w-379 font-family-karla">The
+                                        Aleph
+                                        Zero
+                                        Foundation is
+                                        responsible for
+                                        overseeing the development of Aleph Zero protocol. The
+                                        Foundation is also the issuer of the AZERO coin.</p>
+                                </div>
+                            </div>
+                            <div class="footer-line"></div>
+                            <div>
+                                <div class="d-flex justify-content-between box_mail pt-3">
+                                    <div class="row">
+                                        <div class=" col-md-8 d-flex align-items-center ">
+                                            <img class="cursor-p" src="/assets/img/svg/location.svg" alt="location">
+                                            <p
+                                                class="font-family-inter font-weight-A fs-14 cursor-p text-color-B mb-0 ps-2">
+                                                Bergliweg
+                                                15, 6300
+                                                Zug, Switzerland</p>
+                                        </div>
+
+                                        <div class="col-md-4 d-flex align-items-center">
+                                            <img class="cursor-p mt-35" src="/assets/img/svg/message-2.svg"
+                                                alt="message-2">
+                                            <p
+                                                class="font-family-inter mt-35 cursor-p font-weight-A fs-14 text-color-B mb-0 ps-2">
+                                                hello@alephzero.org
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3" data-aos="zoom-out-left" data-aos-duration="1000">
+                        <div class="card-6 mt-48">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/svg/card-img-4.svg" alt="card-3">
+                                <div>
+                                    <h4
+                                        class="font-weight-A font-size-B text-color-B font-family-inter ms-5 font-family-inter">
+                                        Aleph
+                                        Zero Foundation</h4>
+                                    <p class="font-weight-A fs-14 text-color-B ms-5 max-w-379 font-family-karla">The
+                                        Aleph
+                                        Zero
+                                        Foundation is
+                                        responsible for
+                                        overseeing the development of Aleph Zero protocol. The
+                                        Foundation is also the issuer of the AZERO coin.</p>
+                                </div>
+                            </div>
+                            <div class="footer-line"></div>
+                            <div>
+                                <div class="row d-flex justify-content-between align-items-start box_mail pt-3">
+                                    <div class=" col-md-8 d-flex align-items-center ">
+                                        <img class="cursor-p" src="/assets/img/svg/location.svg" alt="location">
+                                        <p
+                                            class="font-family-inter cursor-p font-weight-A fs-14 text-color-B mb-0 ps-2">
+                                            Zamoyskiego
+                                            79A, 30-519 Krakow, Poland</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="d-flex mt-35">
+                                            <img class="cursor-p" src="./assets/img/svg/earth.svg" alt="earth">
+                                            <p
+                                                class="font-family-inter cursor-p font-weight-A fs-14 text-color-B mb-0 ps-2">
+                                                www.cardinal.co
+                                            </p>
+                                        </div>
+                                        <div class="d-flex pt-2 ">
+                                            <img class="cursor-p" src="/assets/img/svg/message-2.svg" alt="message-2">
+                                            <p
+                                                class="font-family-inter cursor-p font-weight-A fs-14 text-color-B mb-0 ps-2">
+                                                hello@cardinals.cc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center mt-5">
+                    <div class="col-md-7">
+                        <p class="font-family-inter cursor-p font-weight-C font-size-B text-color-B">Aleph Zero
+                            Foundation ©
+                            2018-2023, design and development by Cardinal</p>
+                    </div>
+                    <div class=" col-md-5 d-flex align-items-center justify-content-end">
+                        <p class="font-family-inter cursor-p font-weight-C font-size-B text-color-B">Privacy Policy</p>
+                        <p class="font-family-inter cursor-p font-weight-C font-size-B text-color-B ms-4">Cookies Policy
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="d-flex justify-content-end">
+        <img class="mb-0" src="/assets/img/png/message-3.png" alt="message-3">
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -564,6 +898,10 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/style.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
