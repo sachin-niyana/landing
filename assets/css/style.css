@@ -50,7 +50,7 @@
 
 .button-1:hover {
     transform: translateY(-5px);
-
+    box-shadow: 0px 8px 35px #69f49e;
 }
 
 .discord:hover {
@@ -107,7 +107,7 @@
 .button-2 {
     background: #0F3034;
     border-radius: 48px;
-    width: 191px;
+    width: 195px;
     padding: 14px 28px;
     border: none;
     cursor: pointer;
@@ -115,9 +115,9 @@
 }
 
 .button-2:hover {
-    box-shadow: 0px 4px 20px 0px #354135;
+    box-shadow: 0px 4px 20px 0px #5ae39a;
     border-radius: 48px;
-    width: 191px;
+    width: 195px;
     padding: 14px 28px;
     border: none;
     cursor: pointer;
@@ -134,7 +134,7 @@
 }
 
 .button-3:hover {
-    box-shadow: 0px 4px 20px 0px #354135;
+    box-shadow: 0px 4px 20px 0px #5ae39a;
     transform: translateY(-5px);
 
 }
@@ -157,7 +157,7 @@
 }
 
 .button-4:hover {
-    box-shadow: 0px 0px 20px 0px #02cf98;
+    box-shadow: 0px 0px 20px 0px #5ae39a;
     right: 0;
 
 }
@@ -174,7 +174,7 @@
 }
 
 .button-6:hover {
-    box-shadow: 0px 8px 35px rgba(154, 237, 166, 0.1);
+    box-shadow: 0px 8px 35px #5ae39a;
     transform: translateY(-5px);
 
 }
